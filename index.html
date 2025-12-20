@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENG/ Ahmed tarek</title>
+  <!--fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--style-->
+  
+
+  <!--favicon -->
+  <link rel="shortcut icon" href="./apple-touch-icon.png" type="image/x-icon">
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Saira:ital,wght@0,700;1,700&display=swap');
+:root {
+  --primary-color: #033b4a;
+  --secondary-color: #20c997;
+  --gray: #4a4a4d;
+  --bg-primary: #ecf0f3;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+bady {
+  font-family: "Poppins", serif;
+}
+
+h1,h2 {
+  font-family: "Saira", serif;
+}
+
+ul {
+  list-style: none;
+}
+ a {
+  text-decoration: none;
+ }
+ /*utility classes*/
+ .text-primary {
+  color: var(--secondary-color);
+ }
+ .container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+ }
+
+ .btn-primary {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0,3s ease;
+ }
+
+ .btn-primary:hover {
+  background-color: #15a076;
+ }
+/*header start*/
+header {
+  background-color: var(--bg-primary);
+  height: 100vh;
+}
+header .navbar{
+  background-color: #fff;
+border-bottom: 1px solid #ccc;
+position: fixed;
+width: 100%;
+z-index: 1;
+}
+
+header .navbar nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1.5rem 2rem;
+}
+
+#home #logo {
+color: var(--primary-color);
+font-size: 24px;
+font-weight: 600;
+}
+
+header .navbar nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header .navbar nav ul a{
+  margin: 0 15px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+header .header-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 5rem 2rem 0;
+  height: 100%;
+}
+
+header .header-content .content-text{
+  margin-bottom: 5rem;
+}
+
+#home .header-content p span {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#home .header-content h1 {
+  font-size: 40px;
+  color: var(--primary-color);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+#home .header-content .title {
+font-size: 20px;
+color: var(--primary-color);
+margin: 10px 0;
+font-weight: 500;
+}
+
+#home .header-content .social{
+  margin: 1rem 0 2rem;
+}
+
+#home .header-content .social a i {
+  font-size: 18px;
+  padding: 10px;
+  background-color: var(--gray);
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0,3s ease;
+}
+
+#home .header-content .social a i:hover {
+  transform: scale(0.85);
+}
+
+header .header-content img {
+  max-width: 400px;
+}
+/*header end*/
+
+/*about star*/
+#about,
+#skills,
+#Services {
+  padding: 6rem 0;
+}
+#about h2,
+#skills h2,
+#Services h2,
+#contact h2 {
+  text-align: center;
+  font-size: 38px;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+#about hr,
+#skills hr,
+#Services hr {
+  width: 100px;
+  height: 3px;
+  background: var(--secondary-color);
+  border: none;
+  margin: 5px auto 0;
+}
+#about .about-content {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 3rem;
+}
+#about .about-content .col-1 h3 {
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-top: 20px;
+}
+#about .about-content .col-1 p {
+  color: var(--gray);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+#about .about-content .col-2 p {
+  color: var(--gray);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+/*about end*/
+
+/*skills start*/
+#skills {
+  background-color: var(--primary-color);
+}
+#skills h2 {
+  color: #ccc;
+}
+#skills .skills-content {
+  margin-top: 2rem;
+  background: #0f272d;
+}
+#skills .skills-content .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  text-align: center;
+}
+
+#skills .skills-content .row .item {
+  color: #fff;
+  background: black;
+  margin: 20px;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#skills .skills-content .row .item:hover:{
+  box-shadow: 10px 10px 10px #00f4ab0c;
+}
+
+#skills .skills-content .row .item:nth-child(8) img {
+  max-width: 80px;
+}
+
+#skills .row img {
+  max-width: 40px;
+}
+
+/*skills end*/
+
+/*services start*/
+#Services,
+#contact {
+  background: #00f4ab0c;
+}
+#Services .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Services .heading img {
+  width: 55px;
+  margin-right: 10px;
+}
+#Services .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 4rem;
+  text-align: center;
+  column-gap: 2rem;
+  row-gap: 4rem;
+}
+#Services .row .item {
+  background-color: #fff;
+  padding: 30px 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+#Services .row .item:hover {
+  transform: scale(1.04);
+}
+
+
+#Services .row .item h3 {
+  margin: 15px 0;
+  color: var(--primary-color);
+}
+#Services .row .item p {
+  font-size: 14px;
+}
+#Services .item img {
+  width: 80px;
+}
+/*services end*/
+
+/*contact start*/
+#contact {
+  padding: 4rem 0;
+}
+#contact .row {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  background: #fff;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+}
+#contact .row input,
+#contact .row textarea {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  outline: none;
+  background: #00f4ab0c;
+  border: 1px solid #bbb;
+}
+#contact .row img {
+  width: 450px;
+}
+/*contact end*/
+
+/*footer start*/
+#footer {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+/*footer end*/
+/*tablet responsive*/
+@media (max-width: 768px) {
+  header .navbar nav{
+    display: block;
+    text-align: center;
+  }
+  header .navbar nav ul {
+    margin-top: 20px;
+  }
+  header .navbar nav ul a{
+    margin: 0 8px;
+  }
+  header .header-content {
+    grid-template-columns: 1fr;
+  }
+  header .header-content .content-text{
+    margin-bottom: 0rem;
+    margin-top: rem;
+  }
+  #home .header-content h1 {
+    font-size: 50px;
+  }
+  header .header-content img {
+    max-width: 350px;
+    margin: auto;
+  }
+  #about .about-content,
+  #contact .row  {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+  #skills .skills-content .row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  #Services .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #contact .row img {
+    max-width: 250px;
+    margin: auto;
+  }
+}
+
+/*mobile responsive*/
+@media (max-width: 528px) {
+  #home .header-content h1 {
+    font-size: 35px;
+  }
+  #home .header-content p span {
+    font-size: 16px;
+  }
+  #home .header-content .title {
+    font-size: 16px;
+  }
+  header .header-content img {
+    margin-top: 2rem;
+  }
+  #about h2,
+#skills h2,
+#Services h2,
+#contact h2 {
+  font-size: 30px;
+}
+#about .about-content .col-1 h3 {
+  font-size: 20px;
+}
+#skills .skills-content .row,
+#Services .row {
+  grid-template-columns: 1fr;
+}
+#contact .row {
+  padding: 2rem 1rem;
+}
+header .header-content .content-text{
+  margin-bottom: 0rem;
+  margin-top: 6rem;
+}
+}
+
+/* portfolio start */
+#portfolio {
+  padding: 6rem 0;
+  background: #fff;
+}
+#portfolio h2 {
+  text-align: center;
+  font-size: 38px;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+#portfolio hr {
+  width: 100px;
+  height: 3px;
+  background: var(--secondary-color);
+  border: none;
+  margin: 5px auto 0;
+}
+#portfolio .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+#portfolio .row .item {
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+#portfolio .row .item:hover {
+  transform: scale(1.05);
+}
+#portfolio .row .item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+#portfolio .row .item h3 {
+  padding: 15px;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+/* responsive */
+@media(max-width: 768px) {
+  #portfolio .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media(max-width: 528px) {
+  #portfolio .row {
+    grid-template-columns: 1fr;
+  }
+}
+/* portfolio end */
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+<!-- Header start-->
+ <header id="home">
+  <div class="navbar">
+    <nav>
+      <a href="#home" id="logo">ENG Ahmed Tarek Fathy</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header-content">
+    <div class="content-text">
+      <p><span class="text-primary">Hi there, I'm</span></p>
+      <h1>Ahmed Tarek Fathy</h1>
+      <p class="title">network and progarmming engineer</p>
+      <div class="social">
+        <a href="https://www.facebook.com/share/1A8JjFddpF/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://wa.me/201024477513" target="_blank"><i class="fa-brands fa-whatsapp"></i></i></a>
+        <a href="https://www.linkedin.com/in/ahmed-tarek-5a4090341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+        <a href="https://www.instagram.com/ahmed_tarek4578657?igsh=MXhoZ3ZkYmZqZzZkbA==" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+        <a href="https://www.tiktok.com/@ahmedtarek10000?_t=ZS-8tmZKTF17LO&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></i></a>
+      </div>
+      <a href="#about" class="btn-primary">About Me <i class="fa-solid fa-circle-arrow-down"></i></a>
+    </div>
+    <img src="./ahmed.png" alt="ahmed tarek">
+  </div>
+ </header>  
+ <!-- Header end-->
+  <main>
+    <!--about start-->
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <hr>
+        <div class="about-content">
+          <div class="col-1">
+            <h3>I'm <span class="text-primary">ahmed tarek fathy</span> a network and progarmming engineer</h3>
+            <p> To begin with, I am a specialist in Information Systems holding a Bachelor's degree in the field, which has provided me with a solid knowledge base in system analysis and data management. I have practical experience as a web and application programmer, where I have developed integrated software solutions that meet users' needs and contribute to enhancing the customer experience. Additionally, I possess skills in graphic design that enable me to combine creativity and technology to deliver attractive and professional designs. I am always striving to develop my skills through continuous learning and by keeping up with the latest technologies, which helps me provide innovative and effective solutions in the workplace.</p>
+          </div>
+          <div class="col-2">
+            <p><b>Age:</b>24</p>
+            <p><b>Email:</b> aattff142@gmail.com</p>
+            <p><b>Place:</b>Giza - Egypt</p>
+          </div>          
+        </div>
+      </div>
+    </section>
+    <!--about end-->
+
+    <!--skills start-->
+    <section id="skills">
+      <div class="container">
+        <h2>
+          <i class="fa-solid fa-laptop-code"></i> skills &amp; <span class="text-primary">Abilities</span>
+        </h2>
+        <hr>
+        <div class="skills-content">
+          <div class="row">
+            <div class="item">
+              <img src="./html.png" alt="html">
+              <p>HTML</p>
+            </div>
+            <div class="item">
+              <img src="./css.jpg" alt="css">
+              <p>CSS</p>
+            </div>
+            <div class="item">
+              <img src="./js.png" alt="javascript">
+              <p>javascript</p>
+            </div>
+            <div class="item">
+              <img src="./py.png" alt="python">
+              <p>PYTHON</p>
+            </div>
+            <div class="item">
+              <img src="./c.jpg" alt="c progarmming">
+              <p>C progarmming</p>
+            </div>
+            <div class="item">
+              <img src="./word p.png" alt="wordpress">
+              <p>Wordpress</p>
+            </div>
+            <div class="item">
+              <img src="./c++.png" alt="c++">
+              <p>C++</p>
+            </div>
+            <div class="item">
+              <img src="./gd.jpg" alt="graphic designer">
+              <p>Graphic Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--skills end-->
+    <!--services start-->
+    <section id="Services">
+      <div class="container">
+        <div class="heading">
+          <img src="./serv.png" alt="services">
+
+          <h2>MY <span class="text-primary">services</span></h2>
+        </div>
+        <div class="row">
+          <div class="item">
+            <img src="./serv web dev.png" alt="web development">
+            <h3>web development</h3>
+            <p>I can build a website by using HTML, CSS, and JavaScript and php</p>
+          </div>
+          <div class="item">
+            <img src="./serv resresponsive design.webp" alt="resresponsive design">
+            <h3>Resresponsive design</h3>
+            <p>Your website will be 100% responsive for all devices: Tablets and Smart phones</p>
+          </div>
+          <div class="item">
+            <img src="./serv gd.jpg" alt="graphic Designer">
+            <h3>Graphic Designer</h3>
+            <p>You specialize in creating innovative and effective visual designs that translate ideas into communicative images that express brands' identity</p>
+          </div>
+          <div class="item">
+            <img src="./sev idea.jpg" alt="web ideas">
+            <h3>Web ideas</h3>
+            <p>I could turn your ideas into a real projects with high quality</p>
+          </div>
+          <div class="item">
+            <img src="./sev rato.png" alt="retouch">
+            <h3>Retouch</h3>
+            <p>I can help you by redesign your current webiste to looks much better</p>
+          </div>
+          <div class="item">
+            <img src="./serv support.jpg" alt="support">
+            <h3>Support</h3>
+            <p>Support is available if you wanna make any changes for your website after dilvering it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--services end-->
+
+<!-- Portfolio start -->
+<section id="portfolio">
+  <div class="container">
+    <h2><i class="fa-solid fa-briefcase"></i> My <span class="text-primary">Portfolio</span></h2>
+    <hr>
+    <div class="row">
+      <div class="item">
+        <a href="https://sdffgr2020.github.io/the_library/" target="_blank">
+          <img src="liy.jpg" alt="Project 1">
+          <h3>AL MAKTABA</h3>
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://sdffgr2020.github.io/scar/" target="_blank">
+          <img src="scar.jpg" alt="Project 2">
+          <h3>SCAR</h3>
+        </a>
+      </div>
+      <div class="item">
+        <a href="https://sdffgr2020.github.io/lamsetibdae/" target="_blank">
+          <img src="lamst.jpeg" alt="Project 3">
+          <h3>lamset ibdae</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Portfolio end -->
+
+
+    <!--contact start-->
+    <section id="contact">
+      <div class="container">
+        <h2><i class="fa-solid fa-headset"></i>Get In <span class="text-primary">Touch</span></h2>
+        <div class="row">
+          <img src="./contact.jpg" alt="Get In Touch">
+          <form action="https://formsubmit.co/aattff142@gmail.com" method="POST">
+            <input type="text" name="Name" id="Name" placeholder="Name" required>
+            <input type="email" name="Email" id="Email" placeholder="Email" required>
+            <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Message"></textarea>
+            <button type="submit" class="btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--contact end-->
+  </main>
+  <!--footer start-->
+  <footer id="footer">
+    <p>&copy; 2025 | All Rights Reserved To Ahmed Tarek </p>
+  </footer>
+  <!--footer end-->
+</body>
+</html>
